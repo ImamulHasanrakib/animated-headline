@@ -1,0 +1,130 @@
+
+/* google fonts link  */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+
+
+
+
+*,
+ *::before , 
+ *::after{
+  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+} 
+
+html{
+
+    font-size: 62.5%;
+}
+body{
+
+    font-size: 1.6rem;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+ul ,
+ol{
+    list-style: none;
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding: 2rem;
+}
+
+
+
+#hero{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.6)) , url(../images/alexander-andrews-yOIT88xWkbg-unsplash.jpg) no-repeat  center  center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    position: relative;
+ 
+}
+
+#hero .social_icon ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    gap: 2rem;
+}
+
+#hero .social_icon ul li a{
+    font-size: 2rem;
+    color: #ddd;
+    line-height: 3rem;
+}
+#hero .main_content{
+     max-width: 600px;
+     width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% , -50%);
+
+}
+
+#hero .hero_text h5{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
+}
+#hero .hero_text h1{
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    font-family:  'Josefin Sans', sans-serif !important;
+    z-index: 1000;
+
+}
+
+#hero .hero_text h1 span.fixed{
+    font-weight: 500;
+}
+
+.ah-headline.clip .ah-words-wrapper::after{
+   background-color: #ddd;
+   height: 80%;
+   top: 5px;
+}
+
+#particles-js canvas{
+     width: 100vw !important;
+     height: 100vh !important;
+     z-index: -10000;
+}
+
+@media(max-width:991px){
+    #hero .hero_text h5{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: rgb(255, 255, 255);
+    }
+    #hero .hero_text h1{
+        font-size: 4rem;
+
+    
+    }
+}
+
+@media(max-width:991px){
+    #hero .hero_text h1{
+        font-size: 3rem;
+
+    
+    }
+}
